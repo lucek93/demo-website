@@ -94,7 +94,7 @@ header .welcome {
 header h1 {
     text-align: center;
     font-size: 3em;
-    margin: 10px 0;
+    margin: 5% 0;
 }
 
 header h2 {
@@ -143,20 +143,25 @@ header h2 {
     position: relative;
     height: 100vh;
     background-color: var(--color-one);
+
 }
 
 .about-me {
-    position: absolute;
-    left: 50%;
+    /* position: absolute;
+    left: 50%; */
     text-align: justify;
-    padding: 10px 0;
+    width: 50%;
+    padding: 10px 10px;
     color: white;
+    margin-left: 50%;
+    height: 40vh;
+
 }
 
 .about-me img {
     position: absolute;
-    left: -50%;
-    top: 25%;
+    left: 15%;
+    top: 5%;
     opacity: 0.3;
 }
 
@@ -176,16 +181,15 @@ header h2 {
 }
 
 .about-me p {
-    width: 60%;
+    width: 80%;
     margin: 20px 0;
 }
 
 .hobby {
     position: relative;
-    left: 0;
-    top: 34%;
     max-width: 1920px;
     margin: 0 auto;
+    height: 60vh;
 }
 
 .item-container {
@@ -195,7 +199,7 @@ header h2 {
 
 .item {
     flex-basis: 50%;
-    height: 55vh;
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -220,7 +224,7 @@ header h2 {
 
 .hobby h1 {
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     font-size: 28px;
     text-transform: uppercase;
@@ -231,14 +235,14 @@ header h2 {
     height: 5px;
     width: 24%;
     background-color: var(--color-two);
-    top: 9%;
+    top: 8%;
     left: 38%;
 }
 
 .hobby .item p {
     font-size: 30px;
     padding: 0;
-    line-height: 55vh;
+    line-height: 50vh;
     opacity: 0;
     transition: 1s;
     cursor: default;
@@ -270,7 +274,7 @@ header h2 {
 
 .gallery .title {
     position: absolute;
-    top: 5%;
+    top: 2%;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -400,8 +404,6 @@ span.underline {
 }
 
 
-
-
 .s4 {
     min-height: 100vh;
     background-color: var(--color-one);
@@ -499,7 +501,9 @@ footer {
     font-size: 15px;
 }
 
-@media (max-width: 1200px) {
+/* Media Queries */
+/* min 993px - max 1200px */
+@media (min-width: 993px) and (max-width: 1200px) {
     .nav-bar p {
         font-size: 35px;
         padding-left: 10px;
@@ -518,58 +522,111 @@ footer {
         text-align: center;
     }
 
+    header h1 {
+        font-size: 2em;
+        margin: 5px 0;
+    }
+
+    header h2 {
+        font-size: 1.5em;
+    }
+
+    .portfolio-btn {
+        margin: 15px 0;
+        font-size: 1.5em;
+    }
+
     .about-me {
-        padding: 10px 0;
+        padding: 5px 5px;
+        height: 50vh;
     }
 
     .about-me img {
-        left: -80%;
+        left: 10%;
     }
 
     .about-me h1 {
         position: relative;
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .about-me h1>span {
         height: 3px;
-        width: 14%;
+        width: 9%;
     }
 
     .about-me p {
-        width: 80%;
-        font-size: 13px;
-        margin: 10px 0;
+        width: 90%;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .hobby {
+        height: 50vh;
     }
 
     .item {
         flex-basis: 50%;
-        height: 55vh;
+        height: 40vh;
         background-position: center;
         background-repeat: no-repeat;
     }
 
     .hobby h1 {
-        padding-top: 40px;
+        padding: 0;
         font-size: 20px;
     }
 
     .hobby h1>span {
         height: 3px;
-        width: 32%;
-        top: 13%;
-        left: 34%;
+        width: 28%;
+        top: 12%;
+        left: 36%;
     }
 
     .hobby .item p {
         font-size: 20px;
         opacity: 1;
+        line-height: 40vh;
+    }
+
+    .gallery h1 {
+        font-size: 20px;
+        padding: 5px 20px;
+        margin-bottom: 25px;
+    }
+
+    .gallery .title {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .gallery h1 span {
+        height: 3px;
+    }
+
+    .gallery a {
+        height: 33%;
+    }
+
+    .s3 h1 {
+        font-size: 30px;
+        padding-top: 1%;
     }
 
     span.underline {
-        left: 36%;
-        width: 28%;
+        left: 40%;
+        width: 20%;
+    }
+
+    #circleBar .round {
+        position: relative;
+        min-height: 255px;
+        margin-top: -20px;
+        margin-bottom: 20px;
+        top: 50%;
     }
 
     .container {
@@ -581,23 +638,94 @@ footer {
         margin-top: -50px;
     }
 
+    #circleBar .round span {
+        font-size: 22px;
+        margin-right: 5px;
+        margin-top: 10px;
+        left: -600%;
+        top: 100%;
+        transition: 2s;
+    }
+
+    #circleBar .round span.active {
+        left: 30%;
+    }
+
 }
 
-@media (max-width: 992px) {
-    .item {
+/* min 769 max 992px */
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .nav-bar p {
+        flex-basis: 30%;
+        font-size: 25px;
+        padding-left: 1%;
+    }
+
+    nav {
+        text-align: center;
+        padding-right: 2%;
+    }
+
+    .nav-bar a {
+        width: 20%;
+        font-size: 20px;
+        color: white;
+        margin: 0 5px;
+        text-align: center;
+    }
+
+
+    .about-me h1>span {
+        width: 30%;
+    }
+
+    .about-me {
         height: 40vh;
     }
 
+    .about-me img {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        opacity: 0.3;
+    }
+
+    .about-me p {
+        width: 100%;
+        margin: 2% 0;
+        font-size: 14px;
+    }
+
+
+    .item {
+        flex-basis: 100%;
+        height: 25vh;
+    }
+
+    .hobby {
+        height: 60vh;
+    }
+
+    .item-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .hobby h1 {
-        padding-top: 80px;
+        padding: 0;
         font-size: 20px;
     }
 
     .hobby h1>span {
         height: 3px;
-        width: 40%;
-        top: 24%;
-        left: 30%;
+        width: 42%;
+        top: 4%;
+        left: 29%;
+    }
+
+    .hobby .item p {
+        line-height: 25vh;
     }
 
     .s3.desktop {
@@ -608,45 +736,300 @@ footer {
         margin: -20% auto;
     }
 
-    .nav-bar p {
-        flex-basis: 32%;
-        font-size: 35px;
-        padding-left: 10px;
-    }
+
 
     .portfolio-btn {
         margin: 20px 0;
     }
 
-    #circleBar .round span {
-        margin-right: 7px;
-        margin-top: 7px;
-        left: -600%;
-        top: 80%;
-        transition: 2s;
+
+
+    span.underline {
+        left: 38%;
+        width: 25%;
+    }
+
+
+    #circleBar .round {
+        position: relative;
+        min-height: 255px;
+        margin-top: -20px;
+        margin-bottom: 20px;
+        top: 10%;
+    }
+
+    .container {
+        margin: 0 auto;
     }
 
     #circleBar .round strong {
-        top: 45%;
-        left: 50%;
+        left: 90%;
         margin-top: -50px;
-        transform: translate(-50%, 0);
     }
 
-    span.underline {
-        left: 32%;
-        width: 36%;
+    #circleBar .round span {
+        font-size: 18px;
+        margin-right: 0px;
+        margin-top: 5px;
+        left: -600%;
+        top: 95%;
+        transition: 2s;
+        width: 100%;
     }
+
+    #circleBar .round span.active {
+        left: 35%;
+    }
+
+    div.col-md-3 {
+        margin-right: 150px;
+        margin-bottom: 20px;
+    }
+
+
 
 
 }
 
 
 
+/* min 601 - max 768px */
+
+@media (min-width: 601px) and (max-width: 768px) {
+    div.nav-bar {
+        display: none;
+    }
+
+    div.nav-mobile {
+        display: flex;
+        background-color: var(--color-one);
+        color: white;
+    }
+
+    .nav-mobile nav {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-mobile a {
+        flex: 1;
+        flex-basis: 50%;
+        font-size: 20px;
+        color: white;
+        margin: 15px 15px;
+        text-align: center;
+        border: 2px dotted var(--color-two);
 
 
-@media (max-width: 768px) {}
+    }
 
+
+
+    div.nav-mobile p {
+        font-size: 20px;
+        flex-basis: 80%;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 15vh;
+        font-family: 'Baloo 2', cursive;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+
+    .nav-mobile i {
+        line-height: 15vh;
+        font-size: 40px;
+
+    }
+
+    aside {
+        position: absolute;
+        top: -100%;
+        /* height: 50%; */
+        width: 100%;
+        background-color: var(--color-one);
+        border: 2px solid var(--color-two);
+        z-index: 1;
+
+
+    }
+
+    .fas {
+        display: none;
+    }
+
+    i.show {
+        display: block;
+    }
+
+    aside.show {
+        top: 15vh;
+        bottom: 35%;
+    }
+
+    header {
+        z-index: 0;
+    }
+
+    header .welcome {
+        top: 45%;
+    }
+
+    header h1 {
+        text-align: center;
+        font-size: 2em;
+        margin: 5% 0;
+    }
+
+    header h2 {
+        font-size: 1.5em;
+    }
+
+    .portfolio-btn {
+        display: block;
+        height: 80px;
+        width: 250px;
+        font-size: 0.9em;
+        margin: 60px 0;
+        z-index: -1;
+    }
+
+    .about-me {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about-me h1>span {
+        height: 3px;
+        width: 15%;
+        left: 0;
+    }
+
+    .about-me p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .about-me img {
+        display: none;
+    }
+
+    .hobby h1>span {
+        height: 3px;
+        width: 60%;
+        top: 8%;
+        left: 20%;
+    }
+
+    .item-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        flex-basis: 100%;
+        height: 25vh;
+    }
+
+    .hobby .item p {
+        font-size: 10px;
+        padding: 0;
+        line-height: 25vh;
+    }
+
+    .gallery .title {
+        position: absolute;
+        top: 1%;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translate(-50%, 0);
+    }
+
+    .gallery h1 {
+        font-size: 25px;
+        padding: 2%;
+    }
+
+    .gallery h1 span {
+        height: 3px;
+        width: 40%;
+        left: 30%;
+    }
+
+    .s3 h1 {
+        font-size: 30px;
+    }
+
+    span.underline {
+        height: 5px;
+        left: 20%;
+        width: 61%;
+    }
+
+    #circleBar p {
+        color: white;
+        font-size: 17px;
+        letter-spacing: 3px;
+    }
+
+    #circleBar .round span.active {
+        left: 10%;
+    }
+
+
+    #circleBar .desktop {
+        display: none;
+    }
+
+    #circleBar .mobile {
+        display: block;
+        margin: -40% 10%;
+    }
+
+    #circleBar .round span.active {
+        left: 10%;
+        top: 55%;
+    }
+
+    #circleBar .round strong {
+        top: 35%;
+    }
+
+    #circleBar .round {
+        position: relative;
+        min-height: 255px;
+        margin-top: 20px;
+        margin-bottom: -20px;
+        top: 150%;
+    }
+
+    .contact-title h1 {
+        font-size: 25px;
+    }
+
+    div.contact-form {
+        flex-wrap: wrap;
+    }
+
+    form {
+        flex-basis: 90%;
+        margin-top: 20px;
+    }
+
+    .socials {
+        flex-basis: 80%;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+/* max 600px */
 @media (max-width: 600px) {
     div.nav-bar {
         display: none;
@@ -698,7 +1081,7 @@ footer {
     aside {
         position: absolute;
         top: -100%;
-        /* height: 50%;s */
+        /* height: 50%; */
         width: 100%;
         background-color: var(--color-one);
         border: 2px solid var(--color-two);
@@ -717,7 +1100,7 @@ footer {
 
     aside.show {
         top: 15vh;
-        bottom: 45%;
+        bottom: 35%;
     }
 
     header {
@@ -731,7 +1114,7 @@ footer {
     header h1 {
         text-align: center;
         font-size: 2em;
-        margin: 10px 0;
+        margin: 5% 0;
     }
 
     header h2 {
@@ -748,52 +1131,66 @@ footer {
     }
 
     .about-me {
-        position: absolute;
-        left: 0;
-        text-align: justify;
-        margin: 0 auto;
-        padding: 5px 10px;
-        color: white;
+        width: 100%;
+        margin-left: 0;
+        padding: 3%;
     }
 
     .about-me h1>span {
         height: 3px;
         width: 20%;
         left: 0;
+
+    }
+
+    .about-me h1 {
+        font-size: 20px;
     }
 
     .about-me p {
         width: 100%;
-        margin-top: 5px;
+        margin: 3% 0;
+        font-size: 11px;
+
     }
 
     .about-me img {
         display: none;
     }
 
-    .hobby {
-        top: 40%;
+    .hobby h1 {
+        padding: 0;
+        font-size: 15px;
     }
+
 
     .hobby h1>span {
         height: 3px;
-        width: 85%;
-        top: 27%;
-        left: 8%;
+        width: 61%;
+        top: 5%;
+        left: 20%;
+    }
+
+    .item-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        flex-basis: 100%;
+        height: 25vh;
     }
 
     .hobby .item p {
         font-size: 10px;
         padding: 0;
-        line-height: 40vh;
-        opacity: 1;
-        transition: 1s;
-        cursor: default;
+        line-height: 25vh;
     }
 
     .gallery .title {
         position: absolute;
-        top: 3%;
+        top: 1%;
         left: 50%;
         width: 100%;
         text-align: center;
@@ -840,10 +1237,9 @@ footer {
         margin: -40% 10%;
     }
 
-    #circleBar .round span {
-        margin-top: -5px;
-        top: 60%;
-
+    #circleBar .round span.active {
+        left: 10%;
+        top: 55%;
     }
 
     #circleBar .round strong {
