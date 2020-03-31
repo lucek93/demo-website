@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Kowalski - Web Developer</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Saira+Condensed:400,700|Saira:300,400&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e42ef226d8.js" crossorigin="anonymous"></script>
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- https://www.freepik.com/free-photos-vectors/design -->
+</head>
+
+<body>
+    <!-- Navigation Desktop -->
+    <div class="nav-bar">
+        <p>Jan Kowalski</p>
+        <nav>
+            <a class="about" href="#">O mnie</a>
+            <a class="portfolio" href="#">Portfolio</a>
+            <a class="skills" href="#">Umiejętności</a>
+            <a class="contact" href="#">Kontakt</a>
+        </nav>
+    </div>
+    <!-- Navigation Mobile -->
+    <div class="nav-mobile">
+        <p>Jan Kowalski</p>
+        <div class="burger">
+            <i class="fas fa-bars show"></i>
+            <i class="fas fa-times"></i>
+        </div>
+        <aside>
+            <nav>
+                <a class="about" href="#">O mnie</a>
+                <a class="portfolio" href="#">Portfolio</a>
+                <a class="skills" href="#">Umiejętności</a>
+                <a class="contact" href="#">Kontakt</a>
+            </nav>
+        </aside>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="welcome">
+            <h1>Jan Kowalski</h1>
+            <h2>Web Developer</h2>
+            <button class="portfolio-btn">Zobacz moje portfolio</button>
+        </div>
+        <img src="images/web-dev.jpg" alt=" https://www.freepik.com/free-photos-vectors/design">
+    </header>
+
+    <!-- Section About Me -->
+    <section class="s1" id="about">
+        <div class="about-me">
+            <img src="images/about.png" alt="about me">
+            <h1>O mnie<span></span></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime magnam cum sequi natus culpa sunt
+                reiciendis obcaecati repellendus, suscipit quos, minima atque reprehenderit amet ipsa magni
+                assumenda fuga dolorum ab?.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est consequuntur odio eius voluptate
+                repellendus, libero quos aliquam reiciendis officiis nostrum corrupti aspernatur molestiae
+                necessitatibus tempora mollitia nobis quas sit quia! Lorem ipsum dolor, sit amet consectetur
+                adipisicing
+                elit. Consectetur similique soluta ut exercitationem fugit magnam voluptatem excepturi voluptates
+                molestiae neque, laborum voluptatum. Dolor veniam eaque adipisci quisquam nostrum quasi! Tenetur!
+            </p>
+        </div>
+
+        <div class="hobby">
+            <h1>W wolnym czasie uwielbiam<span></span></h1>
+            <div class="item-container">
+                <div class="item">
+                    <p>Gotować</p>
+                </div>
+                <div class="item">
+                    <p>Podróżować</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Portfolio -->
+    <section class="s2" id="portfolio">
+        <section class="gallery">
+            <div class="title">
+                <h1>Moje portfolio<span></span></h1>
+            </div>
+            <div class="images">
+                <a href="img/projekt1.jpg" data-lightbox="obrazek" data-title="Projekt 1" data-alt="Projekt 1"><img src="img/projekt1_min.jpg" alt="miniatura"></a>
+                <a href="img/proj2.jpg" data-lightbox="obrazek" data-title="Projekt 2"><img src="img/proj2_min.jpg" alt="miniatura"></a>
+                <a href="img/proj3.jpg" data-lightbox="obrazek" data-title="Projekt 3"><img src="img/proj3_min.jpg" alt="miniatura"></a>
+                <a href="img/proj4.jpg" data-lightbox="obrazek" data-title="Projekt 4"><img src="img/proj4_min.jpg" alt="miniatura"></a>
+            </div>
+        </section>
+    </section>
+
+    <!-- Sections Skills -->
+    <section class="s3" id="skills">
+        <section id="circleBar">
+            <h1>Umiejętności<span class="underline"></span></h1>
+            <p>Mój obecny poziom umiejętności programistycznych</p>
+
+            <div class="container desktop">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="round" data-value="0.60" data-size="250" data-thicknes="12">
+                            <strong></strong>
+                            <span><i class="fa fa-html5"></i>
+                                HTML5 </span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="round" data-value="0.60" data-size="250" data-thicknes="12">
+                            <strong></strong>
+                            <span><i class="fa fa-css3"></i>
+                                CSS3 </span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="round" data-value="0.50" data-size="250" data-thicknes="12">
+                            <strong></strong>
+                            <span><i class="fab fa-js"></i>
+                                JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="round" data-value="0.40" data-size="250" data-thicknes="12">
+                            <strong></strong>
+                            <span><i class="fab fa-python"></i>
+                                Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile -->
+            <div class="container mobile">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="round" data-value="0.60" data-size="150" data-thicknes="12">
+                            <strong></strong>
+                            <span><i class="fa fa-html5"></i>
+                                HTML5 </span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <div class="round" data-value="0.60" data-size="150" data-thicknes="12">
+                            <strong></strong>
+                            <span><i class="fa fa-css3"></i>
+                                CSS3 </span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <div class="round" data-value="0.50" data-size="150" data-thicknes="12">
+                            <strong></strong>
+                            <span><i class="fab fa-js"></i>
+                                JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <div class="round" data-value="0.40" data-size="150" data-thicknes="12">
+                            <strong></strong>
+                            <span><i class="fab fa-python"></i>
+                                Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+    </section>
+    <section class="s4" id="contact">
+        <div class="contact-title">
+            <h1>Masz jakieś pytania?</h1>
+            <h2>Napisz do mnie!</h2>
+        </div>
+
+        <div class="contact-form">
+            <form id="contact-form" method="post" action="contact-form-handler.php">
+                <input type="text" name="name" class="form-control" placeholder="Imię" required><br>
+                <input type="email" name="email" class="form-control" placeholder="email" required><br>
+                <textarea name="message" class="form-control" rows="4"></textarea><br>
+                <input type="submit" class="form-control submit" value="SEND MESSAGE">
+            </form>
+            <div class="socials">
+                <div class="social"> <img src="images/contact1.png" alt="kontakt">
+                    <span>jan.kowalski@gmail.com</span>
+                </div>
+                <div class="social"> <img src="images/contact2.png" alt="tel">
+                    <span>600 000 000</span>
+                </div>
+                <div class="social"> <img src="images/contact3.png" alt="kontakt">
+                    <span>jankowalski</span>
+                </div>
+                <div class="social"> <img src="images/contact4.png" alt="kontakt">
+                    <span>@jan_kowalski</span>
+                </div>
+                <div class="social"> <img src="images/contact5.png" alt="kontakt">
+                    <span>jan_kowalski</span>
+                </div>
+            </div>
+        </div>
+        <!-- Map -->
+        <div id="map" class="map"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>&copy;Jan Kowalski</footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="dist/js/lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <script src="js/pie-chart.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/hamburger.js"></script>
+
+</body>
+
+</html>
